@@ -3,8 +3,23 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  
 }
 
+html {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 25%, rgba(239,0,255,1) 75%, rgba(0,212,255,1) 100%); 
+  padding: 0 3%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+body {
+  background-color: whitesmoke;
+  width: 60%;
+  box-shadow: 0 .3em 1em #000;
+}
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -40,3 +55,8 @@
 .read-the-docs {
   color: #888;
 }
+
+
+
+
+

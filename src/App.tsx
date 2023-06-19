@@ -22,16 +22,21 @@ const AppEntrada = (props:any) => {
 }
 
 const AppCloneEntrada = (props:any) => {
+  if (props.texto == "") {
+    return(<label className="fixed-label"> &nbsp; </label>)
+  }
+  else {
   return (
     <label className="fixed-label">{props.texto}</label>
   )
+  }
 }
 
 const App = () => {
   const [entrada, setEntrada] = useState ("")
 
   return (
-    <div>
+    <div className='col-md-12 opa'>
       <AppNavBar/>
       <AppEntrada texto={entrada} mudarTexto={(e: any) => setEntrada(e.target.value)}/>
       <br/>
